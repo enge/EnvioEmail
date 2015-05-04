@@ -25,9 +25,9 @@ public class EmailDispacher extends HttpServlet {
             response.setContentType("text/html;charset=UTF-8");
      
                               
-            String email = request.getParameter("Email");
-            String assunto = request.getParameter("Assunto");
-            String mensagem = request.getParameter("Mensagem");
+            String email = request.getParameter("email");
+            String assunto = request.getParameter("assunto");
+            String mensagem = request.getParameter("mensagem");
             
             String paraEmail = "lzenge@gmail.com";
             String usuario = "lzenge";
