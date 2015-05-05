@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author lenge
  */
 @WebServlet(name = "EmailDispacher", urlPatterns = {"/EmailDispacher"})
+
 public class EmailDispacher extends HttpServlet {
     
     @EJB
@@ -30,7 +31,7 @@ public class EmailDispacher extends HttpServlet {
             String mensagem = request.getParameter("mensagem");
             
             String paraEmail = "lzenge@gmail.com";
-            String usuario = "lzenge";
+            String usuario = "lzenge@gmail.com";
             String senha = "l30303030";
             
         try (PrintWriter out = response.getWriter()) {

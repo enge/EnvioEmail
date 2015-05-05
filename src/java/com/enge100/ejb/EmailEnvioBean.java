@@ -14,12 +14,13 @@ import javax.mail.internet.MimeMessage;
 
 @Stateless
 public class EmailEnvioBean {
-
+    
+    
     public void envioEmail(String paraemail, String usuario, String senha,
             String email, String assunto, String mensagem){
     
-        
-        try {
+                try {
+                        
             Properties prop = System.getProperties();
             
             prop.put("mail.smtp.host","smtp.googlemail.com");
@@ -40,12 +41,10 @@ public class EmailEnvioBean {
             mailMessage.setSubject(senha);
             
             Transport transport = mailSession.getTransport("smtp");
-            transport.connect("smtp.googlemail.com", usuario, senha);
-            
+            transport.connect("smtp.googlemail.com", "lzenge@gmail.com", "l30303030");
             transport.sendMessage(mailMessage, mailMessage.getAllRecipients());
             
-            
-            
+                     
                         
         } catch (MessagingException ex) {
             Logger.getLogger(EmailEnvioBean.class.getName()).log(Level.SEVERE, null, ex);
