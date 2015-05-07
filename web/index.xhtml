@@ -16,25 +16,54 @@
 
         <h:body>
 
-            <p:layout fullPage="true">
-
+            <p:layout  fullPage="true">
+              
                 <p:layoutUnit position="north" size="60" resizable="true" closable="true" collapsible="true">
                    
-                    <p:button value="CADASTRO" style=" background:  aqua" href="emailCliente.jsp"/>
+                    <p:button value="Saude" style=" background:  aqua" href=""/>
                      <p:button value="teste" style=" background:  aqua"/>
                       <p:button value="teste" style=" background:  aqua"/>
                        <p:button value="teste" style=" background:  aqua"/>
                     
                 </p:layoutUnit>
  
-                <p:layoutUnit position="south" size="100" closable="true" collapsible="true">
+                <p:layoutUnit position="south" size="100" resizable="true" closable="true" collapsible="true">
                      <h6>criado por: Luiz Carlos Enge Souza</h6>
                 </p:layoutUnit>
  
-                <p:layoutUnit position="center">
-     
-                   
-                </p:layoutUnit>
+                <p:layoutUnit position="center" size="100" resizable="true" closable="true" collapsible="true">
+    
+                    <h2>Email para contato</h2>
+           
+        <form method="POST" action="EmailDispacher">
+            <table>
+                <tr>
+                    <td align="right"><b>Email :</b></td>
+                    <td>
+                        <input type="text"  name="email" size="65"></input>                        
+                    </td>      
+                </tr>
+                <tr>
+                    <td align="right"><b>Assunto :</b></td>
+                    <td>
+                        <input type="text"  name="assunto" size="65"></input>                        
+                    </td>      
+                </tr>
+                <tr>
+                    <td align="right"><b>Mensagem :</b></td>
+                    <td>
+                        <textarea  name="mensagem" cols="55" rows="7"></textarea>  
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Enviar"></input>                        
+                    </td>      
+                </tr>
+            </table>
+        </form>
+                    </p:layoutUnit>
 
             </p:layout>
 

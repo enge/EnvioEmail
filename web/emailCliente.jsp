@@ -2,11 +2,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Email Cliente</title>
     </head>
+    
     <body>
-        <h1>Email para contato</h1>
+    
+           <h1>Email para contato</h1>
+           
         <form method="POST" action="EmailDispacher">
             <table>
                 <tr>
