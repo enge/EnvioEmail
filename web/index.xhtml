@@ -4,70 +4,73 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:p="http://primefaces.org/ui">
-    
-    
-        <h:head>
-            <f:facet name="first">
-                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
-                <title>ENGE10</title>
-            </f:facet>
-            
-        </h:head>
 
-        <h:body>
 
-            <p:layout  fullPage="true">
-              
-                <p:layoutUnit position="north" size="60" resizable="true" closable="true" collapsible="true">
-                   
-                    <p:button value="Saude" style=" background:  aqua" href=""/>
-                     <p:button value="teste" style=" background:  aqua"/>
-                      <p:button value="teste" style=" background:  aqua"/>
-                       <p:button value="teste" style=" background:  aqua"/>
-                    
-                </p:layoutUnit>
- 
-                <p:layoutUnit position="south" size="100" resizable="true" closable="true" collapsible="true">
-                     <h6>criado por: Luiz Carlos Enge Souza</h6>
-                </p:layoutUnit>
- 
-                <p:layoutUnit position="center" size="100" resizable="true" closable="true" collapsible="true">
-    
-                    <h2>Email para contato</h2>
-           
-        <form method="POST" action="EmailDispacher">
-            <table>
-                <tr>
-                    <td align="right"><b>Email :</b></td>
-                    <td>
-                        <input type="text"  name="email" size="65"></input>                        
-                    </td>      
-                </tr>
-                <tr>
-                    <td align="right"><b>Assunto :</b></td>
-                    <td>
-                        <input type="text"  name="assunto" size="65"></input>                        
-                    </td>      
-                </tr>
-                <tr>
-                    <td align="right"><b>Mensagem :</b></td>
-                    <td>
-                        <textarea  name="mensagem" cols="55" rows="7"></textarea>  
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input type="submit" value="Enviar"></input>                        
-                    </td>      
-                </tr>
-            </table>
-        </form>
-                    </p:layoutUnit>
+    <h:head>
+        <f:facet name="first">
+            <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+            <link rel="stylesheet" type="text/css" href="css.css"></link>
+            <title>ENGE10</title>
+        </f:facet>
+    </h:head>
 
-            </p:layout>
+    <h:body>
 
-        </h:body>
+        <p:layout fullPage="true">
 
-    </html>
+            <p:layoutUnit position="north" size="60" resizable="true" closable="true" collapsible="true">
+
+                <p:button value="Saude" style=" background:  aqua" href=""/>
+                <p:button value="teste" style=" background:  aqua"/>
+                <p:button value="teste" style=" background:  aqua"/>
+                <p:button value="teste" style=" background:  aqua"/>
+
+            </p:layoutUnit>
+
+            <p:layoutUnit position="south" size="100" resizable="true" closable="true" collapsible="true">
+                <h6>criado por: Luiz Carlos Enge Souza</h6>
+            </p:layoutUnit>
+<p:layoutUnit position="east" size="100" resizable="true" closable="true" collapsible="true"> </p:layoutUnit>
+                   <p:layoutUnit position="west" size="100" resizable="false" closable="false" collapsible="false"> 
+                       <p:lightBox style="teste"></p:lightBox>
+                   </p:layoutUnit>
+            <p:layoutUnit position="center" size="100" resizable="true" closable="true" collapsible="true">
+                
+                <h2>Email para contato</h2>
+
+                <form method="POST" action="EmailDispacher">
+                    <table>
+                        <tr>
+                            <td align="right"><b>Email :</b></td>
+                            <td>
+                                <input type="text"  name="email" size="65"></input>                        
+                            </td>      
+                        </tr>
+                        <tr>
+                            <td align="right"><b>Assunto :</b></td>
+                            <td>
+                                <input type="text"  name="assunto" size="65"></input>                        
+                            </td>      
+                        </tr>
+                        <tr>
+                            <td align="right"><b>Mensagem :</b></td>
+                            <td>
+                                <textarea  name="mensagem" cols="55" rows="7"></textarea>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="Enviar"></input>                        
+                            </td>      
+                        </tr>
+                    </table>
+                </form>
+            </p:layoutUnit>
+
+        </p:layout>
+
+    </h:body>
+
+</html>
 
