@@ -31,7 +31,7 @@ public class EmailDispacher extends HttpServlet {
             String mensagem = request.getParameter("mensagem");
             
             String paraEmail = "lzenge@gmail.com";
-            String usuario = "lzenge@gmail.com";
+            String usuario = "lzenge";
             String senha = "l30303030";
             
         try (PrintWriter out = response.getWriter()) {
