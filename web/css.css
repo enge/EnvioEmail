@@ -1,3 +1,11 @@
 .ui-layout-container{
-        background: #6666ff;
+    background: white !important;
   }
+  .ui-widget-content{
+      
+      background-color: white !important;
+  }
+  .teste{
+      size: 99px;
+      background-color:  #99ff99;
+}
