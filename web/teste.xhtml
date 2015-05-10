@@ -9,22 +9,77 @@
         <f:facet name="first">
             <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
             <link rel="stylesheet" type="text/css" href="css.css"></link>
-            <title>ENGE10</title>
+            <title>Melhor Opção de Saude</title>
+            <script type="text/javascript" src="jquery.js"></script>
+            <script type="text/javascript"></script>
+            <link rel="shortcut icon" href="images/images.gif" ></link>
+
         </f:facet>
     </h:head>
     <h:body>
-        <p:layout styleClass="ui-layout-container" fullPage="true"> 
-            
-            <p:layoutUnit position="north" size="100"> 
-                <p:imageSwitch slideshowAuto="true" effect="true">
-<p:graphicImage value="/images/header.jpg" />
+        <a href="http://jquery.com/">jQuery</a>
+        <p:layout styleClass="ui-layout-container" fullPage="true">
 
-</p:imageSwitch>
-             
+            <p:layoutUnit position="north" size="100">
+                
+                <div id="img"></div>
+                
+            </p:layoutUnit>            
+
+            <p:layoutUnit position="center">
+                 <h:form>  
+    <p:growl id="messages"/>
+ 
+    <p:menubar>
+        <p:submenu label="File" icon="ui-icon-document">
+            <p:submenu label="New" icon="ui-icon-contact">
+                <p:menuitem value="Project" url="#" />
+                <p:menuitem value="Other" url="#" />
+            </p:submenu>
+            <p:menuitem value="Open" url="#" />
+            <p:separator />
+            <p:menuitem value="Quit" url="#" />
+        </p:submenu>
+ 
+        <p:submenu label="Edit" icon="ui-icon-pencil">
+            <p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
+            <p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+        </p:submenu>
+ 
+        <p:submenu label="Help" icon="ui-icon-help">
+            <p:menuitem value="Contents" url="#" />
+            <p:submenu label="Search" icon="ui-icon-search">
+                <p:submenu label="Text">
+                    <p:menuitem value="Workspace" url="#" />
+                </p:submenu>
+                <p:menuitem value="File" url="#" />
+            </p:submenu>
+        </p:submenu>
+ 
+        <p:submenu label="Actions" icon="ui-icon-gear">
+            <p:submenu label="Ajax" icon="ui-icon-refresh">
+                <p:menuitem value="Save" actionListener="#{menuView.save}" icon="ui-icon-disk" update="messages"/>
+                <p:menuitem value="Update" actionListener="#{menuView.update}" icon="ui-icon-arrowrefresh-1-w" update="messages"/>
+            </p:submenu>
+            <p:submenu label="Non-Ajax" icon="ui-icon-newwin">
+                <p:menuitem value="Delete" actionListener="#{menuView.delete}" icon="ui-icon-close" update="messages" ajax="false"/>
+            </p:submenu>
+        </p:submenu>
+ 
+        <p:menuitem value="Quit" url="http://www.primefaces.org" icon="ui-icon-close" />
+ 
+        
+    </p:menubar>
+</h:form>
+                    
+
             </p:layoutUnit>
-            <p:layoutUnit position="center"></p:layoutUnit>
-            <p:layoutUnit position="south" size="150"></p:layoutUnit>
-            
+
+            <p:layoutUnit position="south" size="80">
+                <div id="ans"></div>
+
+            </p:layoutUnit>
+
         </p:layout>    
     </h:body>        
 </html>
